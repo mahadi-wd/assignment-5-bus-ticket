@@ -8,4 +8,9 @@
     font-family: "Inter", sans-serif;
 }
 
-
+.banner{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.111),  rgba(0, 0, 0, 0.111)), url('./images/banner.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+}

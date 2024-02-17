@@ -20,7 +20,7 @@
 
     <header>
         <!-- navber -->
-        <section>
+        <section class="max-w-screen-lg mx-auto">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                   <div class="dropdown">
@@ -28,40 +28,112 @@
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </div>
                     <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                      <li><a>Item 1</a></li>
-                      <li>
-                        <a>Parent</a>
-                        <ul class="p-2">
-                          <li><a>Submenu 1</a></li>
-                          <li><a>Submenu 2</a></li>
-                        </ul>
-                      </li>
-                      <li><a>Item 3</a></li>
+                      <li><a>Home</a></li>
+                       <li><a>About</a></li>
+                      <li><a>Dastination</a></li>
+                      <li><a>Search</a></li>
                     </ul>
                   </div>
-                  <a class="btn btn-ghost text-xl">daisyUI</a>
+                  <a class="btn btn-ghost text-xl">M-Ticket</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal px-1">
-                    <li><a>Item 1</a></li>
-                    <li>
-                      <details>
-                        <summary>Parent</summary>
-                        <ul class="p-2">
-                          <li><a>Submenu 1</a></li>
-                          <li><a>Submenu 2</a></li>
-                        </ul>
-                      </details>
-                    </li>
-                    <li><a>Item 3</a></li>
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
                   </ul>
                 </div>
                 <div class="navbar-end">
-                  <a class="btn">Button</a>
+                  <a class="btn text-[#1DD100] bg-[#1DD1001A]">Bus <img src="./images/bus-icon.png" alt=""></a>
                 </div>
               </div>
         </section>
+
+        <!-- banner section -->
+
+        <section class="max-w-screen-lg mx-auto ">
+            <div class="banner lg:h-[550px] rounded-2xl text-center ">
+
+                <h1 class="text-5xl text-white font-releway font-extrabold pt-16 leading-tight lg:leading-normal">Ent to End Travel With <br> <span class="text-[#1DD100]"> MH Paribahan</span></h1>
+
+                <p class="text-white w-1/2 mx-auto text-[18px] font-normal">MH Pariban: Where safety meets the open road. Trust us for secure travels, making every journey a memorable and worry-free experience. Your adventure begins with peace of mind on our buses.</p>
+
+                <button class="btn bg-[#1DD100] text-black text-1xl font-bold border-none mt-6">Bus Tickets</button>
+
+
+                <div class=" flex justify-around mt-10 ">
+                    <div class=" flex justify-center items-center gap-3 p-4 lg:p-6 bg-white rounded-2xl border-b-4 border-[#1DD100]">
+                        <div><img src="./images/people.png" alt=""></div>
+                        <div>
+                            <h3 class="text-4xl font-bold ">500k+</h3>
+                            <p class="text-[18px] font-normal text-[#03071299]">Registered users</p>
+                        </div>
+                    </div>
+                    <div class=" flex justify-center items-center gap-3 p-4 lg:p-6 bg-white rounded-2xl border-b-4 border-[#1DD100]">
+                        <div><img src="./images/ticket-cupon.png" alt=""></div>
+                        <div>
+                            <h3 class="text-4xl font-bold ">1.7 Lacks</h3>
+                            <p class="text-[18px] font-normal text-[#03071299]">Tickest sold</p>
+                        </div>
+                    </div>
+                    <div class=" flex justify-center items-center gap-3 p-4 lg:p-6 bg-white rounded-2xl border-b-4 border-[#1DD100]">
+                        <div><img src="./images/stoppage.png" alt=""></div>
+                        <div>
+                            <h3 class="text-4xl font-bold ">80k+</h3>
+                            <p class="text-[18px] font-normal text-[#03071299]">Rental partners</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+
+            </div>
+        </section>
     </header>
+
+    <!-- main section -->
+
+    <main>
+        <!-- offer section / coupon -->
+        <section class="max-w-screen-lg mx-auto mt-32 ">
+
+           <div class=" text-center">
+            <h1 class="font-raleway text-5xl font-bold ">Best offers for you</h1>
+           </div>
+
+            <div class="mt-10 flex justify-center gap-6 ">
+                <!-- single offer -->
+                <div class="coupon-1   bg-[#FFBF0F] rounded-2xl flex justify-center items-center  ">
+                    <div class="flex-1 p-8 font-inter font-inter "> 
+                        <h1 class="font-bold text-4xl  " >15% OFF</h1>
+                        <p class="text-2xl font-medium"> on your next purchase</p>
+                        <p> use by January 2024</p>
+                    </div>
+                    <div ><img  src="./images/cupon-devider.png" alt=""></div>
+                    <div class="pr-7 ">
+                        <h1 class="text-3xl font-semibold font-releway">NEW15</h1>
+                        <p>Coupon Code</p> 
+                    </div>
+                </div>
+
+                <!-- couple offer-->
+                <div class="coupon-1 bg-[#FFBF0F] rounded-2xl flex justify-center items-center    ">
+                    <div class="flex-1 p-10 font-inter font-inter "> 
+                        <h1 class="font-bold text-4xl  " >15% OFF</h1>
+                        <p class="text-2xl font-medium"> on your next purchase</p>
+                        <p> use by January 2024</p>
+                    </div>
+                    <div><img src="./images/cupon-devider.png" alt=""></div>
+                    <div class="pr-7 ">
+                        <h1 class="text-3xl font-semibold font-releway">NEW15</h1>
+                        <p>Coupon Code</p> 
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
 
   </body>
 </html>
