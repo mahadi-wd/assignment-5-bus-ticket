@@ -26,21 +26,23 @@ for( let i = 0; i < allSeat.length; i++){
 
     // set price and seat number 
 
-    // const selectedSeatContainer = document.getElementById('select-seats-container');
-    // const selectedSeatDiv = document.createElement('div')
-
-    // const p = document.createElement('p');
-    // p.innerText = seat.innerText;
-    // const p2 = document.createElement('p');
-    // p2.innerText = 'Economy Class'
-    // const p3 = document.createElement('p');
-    // p3.innerText = '550';
-
-
-    // selectedSeatContainer.appendChild(p);
-    // selectedSeatContainer.appendChild(p2);
-    // selectedSeatContainer.appendChild(p3);
-   
+    const selectedSeatContainer = document.getElementById('select-seats-container');
+    const newSeatContainer = document.createElement('div');
+    newSeatContainer.classList.add('flex', 'justify-between')
+ 
+     const p = document.createElement('p');
+     p.innerText = seat.innerText;
+     const p2 = document.createElement('p');
+     p2.innerText = 'Economy Class'
+     const p3 = document.createElement('p');
+     p3.innerText = '550';
+ 
+ 
+     newSeatContainer.appendChild(p);
+     newSeatContainer.appendChild(p2);
+     newSeatContainer.appendChild(p3);
+     selectedSeatContainer.appendChild(newSeatContainer);
+     
 
 
 
