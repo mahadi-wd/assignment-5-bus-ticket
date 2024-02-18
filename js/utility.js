@@ -29,3 +29,13 @@ function CurrentSeatById(event){
     // currentScoreElement.innerText = newScore;
     return currentScore;
 }
+
+// // get input bu value
+// function getInputValue(e){
+
+//     const inputValueText = document.getElementById(e).value;
+//     const inputValue = parseFloat(inputValueText);
+//     return inputValue
+    
+// }
+

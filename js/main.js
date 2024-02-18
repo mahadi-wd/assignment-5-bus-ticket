@@ -176,3 +176,26 @@ const applyBtn = document.getElementById('discount-btn').addEventListener('click
         alert("Invaild Code!")
     }
 })
+
+const foneNumbertext = document.getElementById('phone-number');
+foneNumbertext.addEventListener('input', function(event){
+    event.preventDefault();
+    const foneNumber = document.getElementById('phone-number').value;
+    const foneNumberValue = parseFloat(foneNumber);
+   
+            
+   
+
+})
+
+
+
+
+// const inputValue = getInputValue('phone-number');
+// if(typeof inputValue === 'number' || inputValue >= 0){
+//     netxBtn = document.getElementById('next-btn');
+//     netxBtn.removeAttribuconst te('disabled');
+// }
+// else{
+//     alert('barit zaia ghumao ')
+// }

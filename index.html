@@ -467,20 +467,26 @@
 
             <!-- contact form section -->
 
-            <div class="mt-4 font-inter">
-              <h2 class="text-[16px] font-semibold mb-[10px]">Passenger Name*</h2>
-              <input class="rounded-lg border-2 p-3 w-full" type="text" placeholder="Enter your name">
-              <h2 class="text-[16px] font-semibold mt-[10px] mb-[10px]">Phone Number*</h2>
-              <input id="phone-number" class="rounded-lg border-2 p-3 w-full" type="tel" placeholder="Enter your phone number">
-              <h2 class="text-[16px] font-semibold mt-[10px] mb-[10px]">Email ID</h2>
-              <input id="phone-number" class="rounded-lg border-2 p-3 w-full" type="email" placeholder="Enter your email id">
-            </div>
+            <form id="input-form"  action="">
+              <div class="mt-4 font-inter">
+                <h2 class="text-[16px] font-semibold mb-[10px]">Passenger Name*</h2>
+                <input class="rounded-lg border-2 p-3 w-full" type="text" placeholder="Enter your name">
+  
+                <h2 class="text-[16px] font-semibold mt-[10px] mb-[10px]">Phone Number*</h2>
+                <input id="phone-number" class="rounded-lg border-2 p-3 w-full" type="tel" placeholder="Enter your phone number">
+  
+                <h2 class="text-[16px] font-semibold mt-[10px] mb-[10px]">Email ID</h2>
+                <input id="email-lagbne-ekhoni" class="rounded-lg border-2 p-3 w-full" type="email" placeholder="Enter your email id">
+              </div>
+
+              <div>
+                <button type="submit" id="next-btn" onclick="openModal()"  class="btn bg-[#1DD100]  font-semibold text-xl w-full rounded-2xl mt-4 text-white"><a href="#my_modal_8"></a>Next</button>
+              </div>
+            </form>
 
             <!-- next button  -->
 
-            <div>
-              <button id="next-btn" class="btn bg-[#1DD100] text-white font-semibold text-xl w-full rounded-2xl mt-4">Next</button>
-            </div>
+           
 
             <div class="flex justify-center gap-8 mt-3">
               <p class="text-[12px] text-[#03071299] border-b-2 ">Terms and Conditions</p>
@@ -493,6 +499,10 @@
       
       
       </section>
+
+
+      
+
     </main>
 
     <!-- the end of main section -->
@@ -532,7 +542,13 @@
 
     </footer>
 
+   
+
+
+
+
     <script src="./js/utility.js"></script>
     <script src="./js/main.js"></script>
+
   </body>
 </html>
