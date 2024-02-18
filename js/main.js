@@ -2,6 +2,7 @@
 
 const leftCount = 1;
 const newCollect = 1;
+const price = 550;
 
 const allSeat = document.querySelectorAll('.kbd');
 for( let i = 0; i < allSeat.length; i++){
@@ -42,19 +43,34 @@ for( let i = 0; i < allSeat.length; i++){
      newSeatContainer.appendChild(p2);
      newSeatContainer.appendChild(p3);
      selectedSeatContainer.appendChild(newSeatContainer);
+
      
+    //  count and set totla price
+
+    const totalPrice = document.getElementById('total-price');
+    totalPrice.innerText = parseFloat(totalPrice.innerText) + price;
+
+    // count and set grand price
+
+    const grandPrice = document.getElementById('grand-total');
+    grandPrice.innerText = parseFloat(totalPrice.innerText);
+
+    // coupon apply button 
+
+    if(totalPrice.innerText > 2200){
+        alert('You can buy only 4 tickets.  Please Refresh this page after click "OK"' )
+       document.getElementById('father-of-seat').classList.add('disabled-div');
 
 
+    }
 
+    if( totalPrice.innerText >= 2200){
+        const applyBtn = document.getElementById("discount-btn");
+        applyBtn.removeAttribute("disabled");
+        // document.getElementById('discount-btn').removeAttribute('disabled');
+    }
 
-
-
-
-    
+       
     });
-
-    
-   
-
    
 }
