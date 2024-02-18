@@ -21,3 +21,11 @@ function setBackgroundById(e){
 
 // created p tag 
 
+function CurrentSeatById(event){
+    const currentScoreElement = document.getElementById(event);
+    const currentScoreText = currentScoreElement.innerText;
+    const currentScore = parseInt(currentScoreText);
+    // const newScore = currentScore + 1;
+    // currentScoreElement.innerText = newScore;
+    return currentScore;
+}
