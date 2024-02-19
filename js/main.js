@@ -188,6 +188,11 @@ foneNumbertext.addEventListener('input', function(event){
 
 })
 
+const reloadBtn = document.getElementById('modal-close');
+reloadBtn.addEventListener('click', function(){
+    location.reload();
+})
+
 
 
 
